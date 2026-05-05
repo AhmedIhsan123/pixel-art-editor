@@ -1,4 +1,32 @@
 main {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 200px 1fr 1fr;
+	grid-template-rows: auto repeat(4, 1fr);
+	grid-template-areas:
+		"header header header"
+		"color board board"
+		"color board board"
+		"color board board"
+		"color board board";
+	gap: 16px;
+	padding: 16px;
+}
+
+/* areas */
+.header {
+	grid-area: header;
+}
+
+.selector-container {
+	grid-area: color;
+}
+
+.board {
+	grid-area: board;
+	background: var(--surface);
+	border: 1px solid var(--border);
+}
+
+.empty {
+	grid-area: empty;
 }

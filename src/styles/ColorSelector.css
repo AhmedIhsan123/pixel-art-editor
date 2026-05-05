@@ -9,6 +9,7 @@
 .selector-container {
 	display: flex;
 	flex-direction: column;
+	grid-area: color;
 	gap: 0.75rem;
 	padding: 1rem;
 	background-color: var(--surface);
