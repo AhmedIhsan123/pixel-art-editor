@@ -1,7 +1,8 @@
+import ColorSelector from "./components/ColorSelector";
 export default function App() {
 	return (
-		<>
-			<h1>This is the App!</h1>
-		</>
+		<main>
+			<ColorSelector />
+		</main>
 	);
 }
