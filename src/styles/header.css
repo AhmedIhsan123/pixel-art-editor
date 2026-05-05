@@ -1,21 +1,28 @@
-/* styles for our header */
 .header {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 16px;
+	background-color: var(--bg);
+	border-bottom: 1px solid var(--border);
 }
+
 .header a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
+	color: var(--text-h);
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-size: 0.9rem;
+	transition:
+		background 0.15s ease,
+		color 0.15s ease;
 }
+
 .header a:hover {
-    background-color: white;
-    color: black;
-
+	background-color: var(--accent-bg);
+	color: var(--text-h);
 }
 
+.header a:active {
+	opacity: 0.7;
+}
