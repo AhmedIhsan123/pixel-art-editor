@@ -1,12 +1,13 @@
 main {
 	display: grid;
-	grid-template-columns: 0.5fr 1fr 1fr;
-	grid-template-rows: auto repeat(2, 1fr);
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: auto;
 	grid-template-areas:
-		"header header header"
-		"color board board";
+		"header header"
+		"color board";
 	gap: 1rem;
-	padding: 1.5rem;
+	padding: 2rem 0;
+	justify-content: center;
 }
 
 /* areas */

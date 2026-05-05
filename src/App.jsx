@@ -12,7 +12,7 @@ export default function App() {
 				<ColorSelector />
 				<Grid />
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

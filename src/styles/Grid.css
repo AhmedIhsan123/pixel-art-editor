@@ -1,7 +1,6 @@
 .pixel-grid {
 	display: grid;
 	width: 100%;
-	max-width: 512px;
 	aspect-ratio: 1 / 1;
 	background-color: var(--bg-soft);
 	grid-area: board;
