@@ -1,15 +1,12 @@
 main {
 	display: grid;
-	grid-template-columns: 200px 1fr 1fr;
-	grid-template-rows: auto repeat(4, 1fr);
+	grid-template-columns: 0.5fr 1fr 1fr;
+	grid-template-rows: auto repeat(2, 1fr);
 	grid-template-areas:
 		"header header header"
-		"color board board"
-		"color board board"
-		"color board board"
 		"color board board";
-	gap: 16px;
-	padding: 16px;
+	gap: 1rem;
+	padding: 1.5rem;
 }
 
 /* areas */
