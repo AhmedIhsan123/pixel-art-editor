@@ -1,16 +1,25 @@
 import "../styles/Grid.css";
 
-export default function Grid() {
-	const GRID_SIZE = 16;
+// grid size defined here too so the css grid columns match
+const GRID_SIZE = 16;
 
+export default function Grid({ grid, paintCell }) {
 	return (
 		<div
 			className="pixel-grid"
 			style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
 		>
-			{Array.from({ length: GRID_SIZE * GRID_SIZE }).map((_, i) => (
-				<div key={i} className="pixel" />
-			))}
+			{/* loop over each row, then each cell in that row */}
+			{grid.map((row, r) =>
+				row.map((color, c) => (
+					<button
+						key={`${r}-${c}`}
+						className="pixel"
+						style={{ backgroundColor: color }}
+						onClick={() => paintCell(r, c)}
+					/>
+				))
+			)}
 		</div>
 	);
 }
